@@ -12,4 +12,4 @@ if(process.env.NODE_ENV === 'dev'){
 }else{
     urlDB = process.env.a;
 };
-process.env.URLDB = "mongodb+srv://cafe:49xtdrown@cluster0-lwu8t.mongodb.net/test?retryWrites=true&w=majority";
+process.env.URLDB = urlDB;
