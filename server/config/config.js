@@ -5,6 +5,13 @@ process.env.PORT = process.env.PORT || 3000;
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
  
 //Base de datos
+
+//Vencimiento del token
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24;
+
+//SEED
+process.env.SEED = process.env.SEED || 'seed-secret';
+
 let urlDB;
 
 if(process.env.NODE_ENV === 'dev'){
